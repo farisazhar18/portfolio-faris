@@ -238,12 +238,21 @@ ul {
 }
 
 .nav-cta:hover {
-    background: #ffffff;
-    color: #092328;
+    background: transparent;
+    color: var(--accent-primary);
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    z-index: 1000;
 }
 
 /* ==========================================================================
-   Common Glass Panel & Buttons
+   Hero Section Glass Panel & Buttons
    ========================================================================== */
 .glass-panel {
     background: var(--glass-bg);
@@ -878,8 +887,39 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .nav-links, .nav-cta {
+    .nav-cta {
         display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(9, 35, 40, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: 0.4s ease-in-out;
+        z-index: 999;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
     }
     
     .bento-grid {
