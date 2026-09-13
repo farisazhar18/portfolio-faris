@@ -957,8 +957,19 @@ footer p {
 
     /* Contact Responsive */
     .massive-title {
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 1;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .contact-actions .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .form-row {
@@ -966,6 +977,10 @@ footer p {
     }
 
     .glass-form {
-        padding: 24px;
+        padding: 20px;
+    }
+    
+    .contact-left .form-title {
+        font-size: 2.2rem;
     }
 }
