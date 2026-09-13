@@ -224,8 +224,12 @@ ul {
 }
 
 .nav-links li a:hover,
-.nav-links li a.active {
+.nav-links a:hover {
     color: var(--accent-primary);
+}
+
+.mobile-only-link {
+    display: none;
 }
 
 .nav-cta {
@@ -916,6 +920,10 @@ footer p {
 
     .nav-links.active {
         right: 0;
+    }
+
+    .mobile-only-link {
+        display: block;
     }
 
     .nav-links a {
