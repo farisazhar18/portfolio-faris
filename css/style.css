@@ -866,7 +866,7 @@ footer p {
         grid-column: span 2;
     }
     
-    .project-card {
+    .project-card, .contact-split {
         grid-template-columns: 1fr;
     }
     
@@ -893,6 +893,17 @@ footer p {
     .hero-title {
         font-size: 2.5rem;
     }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
     
     .timeline {
         padding-left: 20px;
@@ -902,5 +913,19 @@ footer p {
         left: -29px;
         width: 16px;
         height: 16px;
+    }
+
+    /* Contact Responsive */
+    .massive-title {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .glass-form {
+        padding: 24px;
     }
 }
