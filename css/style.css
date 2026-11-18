@@ -139,16 +139,12 @@ ul {
     background-color: #092328; /* Dark */
 }
 
-#experience {
-    background-color: #12544F; /* Dark Forest Green */
-}
-
 #projects {
     background-color: #8BBB92; /* Terang */
     color: #092328; /* Dark text for contrast */
 }
 
-#education {
+#experience {
     background-color: #12544F; /* Dark Forest Green */
     color: var(--text-primary);
 }
