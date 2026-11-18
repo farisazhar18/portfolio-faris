@@ -88,15 +88,35 @@ initHoverSlider('slider-radio');
 
 // Custom Cursor Logic
 const cursor = document.querySelector('.custom-cursor');
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
+if (cursor) {
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
 
-const interactives = document.querySelectorAll('a, button, .bento-card, .project-card, .pill');
-interactives.forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+    const interactives = document.querySelectorAll('a, button, .bento-card, .project-card, .pill, .stat-card, .edu-card, .credential-card, .timeline-content');
+    interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+    });
+}
+
+// Scroll Spy for Nav Links
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+    const scrollY = window.pageYOffset;
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 150;
+        const sectionId = current.getAttribute('id');
+        const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+        if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+                navLink.classList.add('active');
+            }
+        }
+    });
 });
 
 // Scroll Progress Bar Logic
