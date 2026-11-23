@@ -186,22 +186,21 @@ if(mobileToggle && navLinks) {
     });
 }
 
-// Contact Form AJAX Submission with feedback
+// Contact Form AJAX Submission (FormSubmit - Direct to Email without Account)
 const contactForm = document.querySelector('.glass-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async function (e) {
         e.preventDefault();
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.innerHTML;
-        const actionUrl = contactForm.getAttribute('action');
-
-        if (actionUrl.includes('ganti_kode_formspree_disini')) {
-            alert('Form belum bisa mengirim karena kode Formspree belum diisi!\n\nSilakan buat form gratis di https://formspree.io lalu ganti kodenya di file index.html atau kirim kodenya ke sini.');
-            return;
-        }
+        const formStatus = document.getElementById('form-status');
+        const actionUrl = contactForm.getAttribute('action') || 'https://formsubmit.co/ajax/farisazhar838@gmail.com';
 
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+        if (formStatus) {
+            formStatus.style.display = 'none';
+        }
 
         try {
             const formData = new FormData(contactForm);
@@ -215,21 +214,34 @@ if (contactForm) {
 
             if (response.ok) {
                 submitBtn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+                if (formStatus) {
+                    formStatus.style.display = 'block';
+                    formStatus.style.color = '#2C4434';
+                    formStatus.style.fontWeight = '600';
+                    formStatus.innerHTML = '✓ Pesan berhasil dikirim ke email Faris!';
+                }
                 contactForm.reset();
                 setTimeout(() => {
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = originalBtnText;
-                }, 4000);
+                }, 5000);
             } else {
-                const data = await response.json();
-                alert(data.error || 'Terjadi kesalahan saat mengirim pesan.');
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
+                throw new Error('Form submission failed');
             }
         } catch (error) {
-            alert('Gagal mengirim pesan. Silakan coba lagi atau hubungi langsung via WhatsApp / Email.');
+            // Smooth fallback directly to mailto without jarring alerts
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalBtnText;
+            if (formStatus) {
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#1E1510';
+                formStatus.innerHTML = 'Mengalihkan ke aplikasi email...';
+            }
+            const name = contactForm.querySelector('input[name="name"]')?.value || '';
+            const email = contactForm.querySelector('input[name="email"]')?.value || '';
+            const subject = encodeURIComponent(contactForm.querySelector('input[name="subject"]')?.value || 'Inquiry from Portfolio');
+            const message = encodeURIComponent(`Halo Faris,\n\nNama: ${name}\nEmail: ${email}\n\nPesan:\n${contactForm.querySelector('textarea[name="message"]')?.value || ''}`);
+            window.location.href = `mailto:farisazhar838@gmail.com?subject=${subject}&body=${message}`;
         }
     });
 }
