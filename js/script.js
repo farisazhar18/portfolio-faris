@@ -185,3 +185,51 @@ if(mobileToggle && navLinks) {
         });
     });
 }
+
+// Contact Form AJAX Submission with feedback
+const contactForm = document.querySelector('.glass-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        const actionUrl = contactForm.getAttribute('action');
+
+        if (actionUrl.includes('ganti_kode_formspree_disini')) {
+            alert('Form belum bisa mengirim karena kode Formspree belum diisi!\n\nSilakan buat form gratis di https://formspree.io lalu ganti kodenya di file index.html atau kirim kodenya ke sini.');
+            return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(actionUrl, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                submitBtn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+                contactForm.reset();
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                }, 4000);
+            } else {
+                const data = await response.json();
+                alert(data.error || 'Terjadi kesalahan saat mengirim pesan.');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        } catch (error) {
+            alert('Gagal mengirim pesan. Silakan coba lagi atau hubungi langsung via WhatsApp / Email.');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+        }
+    });
+}

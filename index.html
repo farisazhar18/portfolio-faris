@@ -1,42 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO Metadata -->
     <title>Muhammad Faris Azhar | Full-Stack Developer</title>
-    <meta name="description"
-        content="Portfolio of Muhammad Faris Azhar, Full-Stack Developer specializing in scalable web applications, business logic, and automated digital workflows using Laravel, PHP, JavaScript, and MySQL.">
-    <meta name="keywords"
-        content="Muhammad Faris Azhar, Full-Stack Developer, Web Developer, Portfolio, Laravel, PHP, JavaScript, MySQL, Tailwind CSS, PT KAI, Bandung, Indonesia">
-    <meta name="author" content="Muhammad Faris Azhar">
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Faris Azhar, Full-Stack Developer specializing in scalable web applications, business logic, and automated digital workflows using Laravel, PHP, JavaScript, and MySQL."
+    />
+    <meta
+      name="keywords"
+      content="Muhammad Faris Azhar, Full-Stack Developer, Web Developer, Portfolio, Laravel, PHP, JavaScript, MySQL, Tailwind CSS, PT KAI, Bandung, Indonesia"
+    />
+    <meta name="author" content="Muhammad Faris Azhar" />
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Muhammad Faris Azhar | Full-Stack Developer">
-    <meta property="og:description"
-        content="Full-Stack Developer specializing in turning complex operational logic into scalable, user-centric web applications.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://farisazhar18.github.io/portfolio-faris/">
-    <meta property="og:image" content="https://farisazhar18.github.io/portfolio-faris/img/faris.png">
+    <meta
+      property="og:title"
+      content="Muhammad Faris Azhar | Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Developer specializing in turning complex operational logic into scalable, user-centric web applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://farisazhar18.github.io/portfolio-faris/"
+    />
+    <meta
+      property="og:image"
+      content="https://farisazhar18.github.io/portfolio-faris/img/faris.png"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/portfolio.png">
+    <link rel="icon" type="image/png" href="img/portfolio.png" />
 
     <!-- Google Fonts: Inter, Fira Code, Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- GSAP for smooth animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css?v=8">
-</head>
+    <link rel="stylesheet" href="css/style.css?v=8" />
+  </head>
 
-<body>
+  <body>
     <!-- Custom Cursor -->
     <div class="custom-cursor"></div>
 
@@ -45,397 +63,677 @@
 
     <!-- Floating Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">Faris<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li class="mobile-only-link"><a href="#contact">Get In Touch</a></li>
-            </ul>
-            <a href="#contact" class="nav-cta">Get In Touch</a>
+      <div class="nav-container">
+        <a href="#home" class="logo">Faris<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li class="mobile-only-link"><a href="#contact">Get In Touch</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Get In Touch</a>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container hero-container reveal">
-            <div class="status-badge">
-                <div class="pulse-dot"></div>
-                <span>Available for Full-Stack Opportunities</span>
-            </div>
-
-            <div class="hero-profile">
-                <img src="img/faris.png" alt="Muhammad Faris Azhar">
-            </div>
-
-            <h1 class="hero-title">
-                Hi, I'm <br>
-                <span class="gradient-text">Faris Azhar.</span>
-            </h1>
-
-            <p class="hero-subtitle">
-                A <strong>Full-Stack Developer</strong> and Information Systems graduate from Universitas Komputer Indonesia. I specialize in turning complex operational logic into scalable, user-centric web applications using <strong>Laravel, PHP, JavaScript, and MySQL</strong>.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    View Projects <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1aWmS_XrY6X1OQH6kuudDVyoeka7aTt7I?usp=sharing"
-                    target="_blank" class="btn btn-secondary">
-                    View CV <i class="fa-solid fa-download"></i>
-                </a>
-            </div>
+      <div class="container hero-container reveal">
+        <div class="status-badge">
+          <div class="pulse-dot"></div>
+          <span>Available for Full-Stack Opportunities</span>
         </div>
+
+        <div class="hero-profile">
+          <img src="img/faris.png" alt="Muhammad Faris Azhar" />
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <br />
+          <span class="gradient-text">Faris Azhar.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A <strong>Full-Stack Developer</strong> and Information Systems
+          graduate from Universitas Komputer Indonesia. I specialize in turning
+          complex operational logic into scalable, user-centric web applications
+          using <strong>Laravel, PHP, JavaScript, and MySQL</strong>.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1aWmS_XrY6X1OQH6kuudDVyoeka7aTt7I?usp=sharing"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            View CV <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section (Showcased Right After Hero) -->
     <section id="projects" class="projects section-padding">
-        <div class="container reveal">
-            <div class="section-header">
-                <h2>Selected <span>Projects</span></h2>
-                <p>Production-ready applications solving operational and enterprise challenges.</p>
-            </div>
-
-            <div class="project-grid">
-
-                <!-- Project 1: Thesis POS & Inventory -->
-                <div class="project-card glass-panel">
-                    <div class="project-image" id="slider-pos">
-                        <div class="slider-container">
-                            <img src="img/pos1.png" alt="POS System 1" class="slider-img active">
-                            <img src="img/pos2.png" alt="POS System 2" class="slider-img">
-                            <img src="img/pos3.png" alt="POS System 3" class="slider-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-period"><i class="fa-solid fa-calendar-days"></i> Apr 2026 – Jul 2026 · Thesis Project</div>
-                        <div class="project-tags">
-                            <span class="tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                            <span class="tag"><i class="fa-solid fa-database"></i> MySQL</span>
-                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                            <span class="tag"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
-                            <span class="tag"><i class="fa-solid fa-shield-halved"></i> RBAC</span>
-                        </div>
-                        <h3>Web-Based Raw Material Management System</h3>
-                        <ul class="project-bullets">
-                            <li>Developed a full-stack web application integrating a Point of Sale (POS) system with raw material inventory management for coffee shop operations.</li>
-                            <li>Implemented role-based access control (RBAC) to separate workflows and interface features between Barista and Logistics roles.</li>
-                            <li>Engineered backend logic to automatically calculate and deduct raw material stock based on beverage recipes per completed transaction, supplemented with operational reporting.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/farisazhar18/skripsi-teco" target="_blank" class="link-btn"><i
-                                    class="fa-brands fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Radio Trouble Report System -->
-                <div class="project-card glass-panel">
-                    <div class="project-image" id="slider-radio">
-                        <div class="slider-container">
-                            <img src="img/radio1.png" alt="Radio System 1" class="slider-img active">
-                            <img src="img/radio2.png" alt="Radio System 2" class="slider-img">
-                            <img src="img/radio3.png" alt="Radio System 3" class="slider-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-period"><i class="fa-solid fa-calendar-days"></i> Aug 2025 – Oct 2025 · PT Kereta Api Indonesia (Persero)</div>
-                        <div class="project-tags">
-                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                            <span class="tag"><i class="fa-brands fa-google"></i> Apps Script</span>
-                            <span class="tag"><i class="fa-solid fa-table"></i> Google Sheets</span>
-                            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5/CSS3</span>
-                        </div>
-                        <h3>Locomotive Radio Trouble Report System</h3>
-                        <ul class="project-bullets">
-                            <li>Engineered an internal web-based application for PT Kereta Api Indonesia (Persero) Unit Sintel to modernize locomotive radio trouble reporting across maintenance units.</li>
-                            <li>Streamlined data entry, storage, automated processing, and operational reporting, replacing legacy paper reports with instant digital records.</li>
-                            <li>Integrated Google Apps Script with Google Sheets as a zero-maintenance cloud backend for real-time ticket dispatch, tracking, and operational logging.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/farisazhar18/sistem-trouble-radio" target="_blank"
-                                class="link-btn"><i class="fa-brands fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>Selected <span>Projects</span></h2>
+          <p>
+            Production-ready applications solving operational and enterprise
+            challenges.
+          </p>
         </div>
+
+        <div class="project-grid">
+          <!-- Project 1: Thesis POS & Inventory -->
+          <div class="project-card glass-panel">
+            <div class="project-image" id="slider-pos">
+              <div class="slider-container">
+                <img
+                  src="img/pos1.png"
+                  alt="POS System 1"
+                  class="slider-img active"
+                />
+                <img src="img/pos2.png" alt="POS System 2" class="slider-img" />
+                <img src="img/pos3.png" alt="POS System 3" class="slider-img" />
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-period">
+                <i class="fa-solid fa-calendar-days"></i> Apr 2026 – Jul 2026 ·
+                Thesis Project
+              </div>
+              <div class="project-tags">
+                <span class="tag"
+                  ><i class="fa-brands fa-laravel"></i> Laravel</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-database"></i> MySQL</span
+                >
+                <span class="tag"
+                  ><i class="fa-brands fa-js"></i> JavaScript</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-wind"></i> Tailwind CSS</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-shield-halved"></i> RBAC</span
+                >
+              </div>
+              <h3>Web-Based Raw Material Management System</h3>
+              <ul class="project-bullets">
+                <li>
+                  Developed a full-stack web application integrating a Point of
+                  Sale (POS) system with raw material inventory management for
+                  coffee shop operations.
+                </li>
+                <li>
+                  Implemented role-based access control (RBAC) to separate
+                  workflows and interface features between Barista and Logistics
+                  roles.
+                </li>
+                <li>
+                  Engineered backend logic to automatically calculate and deduct
+                  raw material stock based on beverage recipes per completed
+                  transaction, supplemented with operational reporting.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/farisazhar18/skripsi-teco"
+                  target="_blank"
+                  class="link-btn"
+                  ><i class="fa-brands fa-github"></i> Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Radio Trouble Report System -->
+          <div class="project-card glass-panel">
+            <div class="project-image" id="slider-radio">
+              <div class="slider-container">
+                <img
+                  src="img/radio1.png"
+                  alt="Radio System 1"
+                  class="slider-img active"
+                />
+                <img
+                  src="img/radio2.png"
+                  alt="Radio System 2"
+                  class="slider-img"
+                />
+                <img
+                  src="img/radio3.png"
+                  alt="Radio System 3"
+                  class="slider-img"
+                />
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-period">
+                <i class="fa-solid fa-calendar-days"></i> Aug 2025 – Oct 2025 ·
+                PT Kereta Api Indonesia (Persero)
+              </div>
+              <div class="project-tags">
+                <span class="tag"
+                  ><i class="fa-brands fa-js"></i> JavaScript</span
+                >
+                <span class="tag"
+                  ><i class="fa-brands fa-google"></i> Apps Script</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-table"></i> Google Sheets</span
+                >
+                <span class="tag"
+                  ><i class="fa-brands fa-html5"></i> HTML5/CSS3</span
+                >
+              </div>
+              <h3>Locomotive Radio Trouble Report System</h3>
+              <ul class="project-bullets">
+                <li>
+                  Engineered an internal web-based application for PT Kereta Api
+                  Indonesia (Persero) Unit Sintel to modernize locomotive radio
+                  trouble reporting across maintenance units.
+                </li>
+                <li>
+                  Streamlined data entry, storage, automated processing, and
+                  operational reporting, replacing legacy paper reports with
+                  instant digital records.
+                </li>
+                <li>
+                  Integrated Google Apps Script with Google Sheets as a
+                  zero-maintenance cloud backend for real-time ticket dispatch,
+                  tracking, and operational logging.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/farisazhar18/sistem-trouble-radio"
+                  target="_blank"
+                  class="link-btn"
+                  ><i class="fa-brands fa-github"></i> Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience section-padding">
-        <div class="container reveal">
-            <div class="section-header">
-                <h2>Work <span>Experience</span></h2>
-                <p>Hands-on engineering and operational domain experience.</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-line"></div>
-
-                <!-- Experience 1: PT KAI -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <div class="timeline-date">Aug 2025 – Oct 2025</div>
-                        <h3>Web Developer Intern — Unit Sintel</h3>
-                        <h4><i class="fa-solid fa-train"></i> PT Kereta Api Indonesia (Persero) · Bandung, Indonesia</h4>
-                        <div class="exp-meta">
-                            <span class="exp-badge">Internship</span>
-                            <span class="exp-badge">Enterprise Web App</span>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li>Developed a centralized web application for managing locomotive radio trouble reports using HTML, CSS, JavaScript, Google Apps Script, and Google Sheets.</li>
-                            <li>Supported data input, storage, processing, and reporting workflows to streamline operational data management within the Sintel Unit.</li>
-                            <li>Translated real-world operational needs into practical digital features within an enterprise environment.</li>
-                        </ul>
-                        <div class="tech-pills">
-                            <span class="pill"><i class="fa-brands fa-js"></i> JavaScript</span>
-                            <span class="pill"><i class="fa-brands fa-google"></i> Google Apps Script</span>
-                            <span class="pill"><i class="fa-solid fa-table"></i> Google Sheets</span>
-                            <span class="pill"><i class="fa-brands fa-html5"></i> HTML5</span>
-                            <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience 2: Terminal Coffee -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <div class="timeline-date">May 2024 – Present</div>
-                        <h3>Part-Time Barista</h3>
-                        <h4><i class="fa-solid fa-mug-hot"></i> Terminal Coffee · Bandung, Indonesia</h4>
-                        <div class="exp-meta">
-                            <span class="exp-badge">Operations &amp; POS</span>
-                            <span class="exp-badge">Inventory Management</span>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li>Managed daily transactions and operational POS workflows in a fast-paced retail environment.</li>
-                            <li>Handled beverage preparation and raw material inventory tracking with high attention to precision.</li>
-                            <li>Collaborated with team members to ensure smooth daily operations and consistent service quality.</li>
-                            <li>Gained firsthand domain knowledge of coffee shop supply chain and stock deduction, which directly inspired the architecture of my Thesis Project.</li>
-                        </ul>
-                        <div class="tech-pills">
-                            <span class="pill"><i class="fa-solid fa-cash-register"></i> POS Operations</span>
-                            <span class="pill"><i class="fa-solid fa-boxes-stacked"></i> Inventory Handling</span>
-                            <span class="pill"><i class="fa-solid fa-users"></i> Team Collaboration</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>Work <span>Experience</span></h2>
+          <p>Hands-on engineering and operational domain experience.</p>
         </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <!-- Experience 1: PT KAI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">Aug 2025 – Oct 2025</div>
+              <h3>Web Developer Intern — Unit Sintel</h3>
+              <h4>
+                <i class="fa-solid fa-train"></i> PT Kereta Api Indonesia
+                (Persero) · Bandung, Indonesia
+              </h4>
+              <div class="exp-meta">
+                <span class="exp-badge">Internship</span>
+                <span class="exp-badge">Enterprise Web App</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  Developed a centralized web application for managing
+                  locomotive radio trouble reports using HTML, CSS, JavaScript,
+                  Google Apps Script, and Google Sheets.
+                </li>
+                <li>
+                  Supported data input, storage, processing, and reporting
+                  workflows to streamline operational data management within the
+                  Sintel Unit.
+                </li>
+                <li>
+                  Translated real-world operational needs into practical digital
+                  features within an enterprise environment.
+                </li>
+              </ul>
+              <div class="tech-pills">
+                <span class="pill"
+                  ><i class="fa-brands fa-js"></i> JavaScript</span
+                >
+                <span class="pill"
+                  ><i class="fa-brands fa-google"></i> Google Apps Script</span
+                >
+                <span class="pill"
+                  ><i class="fa-solid fa-table"></i> Google Sheets</span
+                >
+                <span class="pill"
+                  ><i class="fa-brands fa-html5"></i> HTML5</span
+                >
+                <span class="pill"
+                  ><i class="fa-brands fa-css3-alt"></i> CSS3</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: Terminal Coffee -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">May 2024 – Present</div>
+              <h3>Part-Time Barista</h3>
+              <h4>
+                <i class="fa-solid fa-mug-hot"></i> Terminal Coffee · Bandung,
+                Indonesia
+              </h4>
+              <div class="exp-meta">
+                <span class="exp-badge">Operations &amp; POS</span>
+                <span class="exp-badge">Inventory Management</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  Managed daily transactions and operational POS workflows in a
+                  fast-paced retail environment.
+                </li>
+                <li>
+                  Handled beverage preparation and raw material inventory
+                  tracking with high attention to precision.
+                </li>
+                <li>
+                  Collaborated with team members to ensure smooth daily
+                  operations and consistent service quality.
+                </li>
+                <li>
+                  Gained firsthand domain knowledge of coffee shop supply chain
+                  and stock deduction, which directly inspired the architecture
+                  of my Thesis Project.
+                </li>
+              </ul>
+              <div class="tech-pills">
+                <span class="pill"
+                  ><i class="fa-solid fa-cash-register"></i> POS
+                  Operations</span
+                >
+                <span class="pill"
+                  ><i class="fa-solid fa-boxes-stacked"></i> Inventory
+                  Handling</span
+                >
+                <span class="pill"
+                  ><i class="fa-solid fa-users"></i> Team Collaboration</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills & Credentials Section -->
     <section id="skills" class="skills section-padding">
-        <div class="container reveal">
-            <div class="section-header">
-                <h2>Technical <span>Skills</span></h2>
-                <p>Core development stack, digital tools, and validated credentials.</p>
-            </div>
-
-            <div class="bento-grid">
-                <!-- Backend -->
-                <div class="bento-card bento-span-2">
-                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
-                    <h3>Programming &amp; Architecture</h3>
-                    <p>Building scalable backend systems, server-side business logic, and APIs.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                        <span class="pill"><i class="fa-brands fa-php"></i> PHP</span>
-                        <span class="pill"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="pill"><i class="fa-brands fa-html5"></i> HTML5</span>
-                        <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                        <span class="pill"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
-                        <span class="pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-                    </div>
-                </div>
-
-                <!-- Database & Integration -->
-                <div class="bento-card">
-                    <div class="card-icon"><i class="fa-solid fa-database"></i></div>
-                    <h3>Database &amp; APIs</h3>
-                    <p>Relational databases and RESTful service integration.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-solid fa-database"></i> MySQL</span>
-                        <span class="pill"><i class="fa-solid fa-cloud"></i> REST API</span>
-                        <span class="pill"><i class="fa-solid fa-code"></i> JSON</span>
-                    </div>
-                </div>
-
-                <!-- Digital Tools -->
-                <div class="bento-card">
-                    <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                    <h3>Tools &amp; Automation</h3>
-                    <p>Cloud productivity and developer workflows.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-brands fa-google"></i> Google Apps Script</span>
-                        <span class="pill"><i class="fa-solid fa-table"></i> Google Sheets</span>
-                        <span class="pill"><i class="fa-brands fa-github"></i> Git / GitHub</span>
-                    </div>
-                </div>
-
-                <!-- Professional Soft Skills -->
-                <div class="bento-card bento-span-2">
-                    <div class="card-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3>Professional Mindset</h3>
-                    <p>Attributes honed through technical development and fast-paced operational teamwork.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
-                        <span class="pill"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical Thinking</span>
-                        <span class="pill"><i class="fa-solid fa-people-group"></i> Team Collaboration</span>
-                        <span class="pill"><i class="fa-solid fa-arrows-spin"></i> Fast Learner &amp; Adaptability</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credentials Subsection (Certification & Publication) -->
-            <div class="credentials-header">
-                <h3>Certifications &amp; Research</h3>
-                <p>Academic publication and specialized AI/data training.</p>
-            </div>
-
-            <div class="credentials-grid">
-                <!-- Certification: IBM Granite -->
-                <div class="credential-card">
-                    <div class="card-top">
-                        <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
-                        <span class="credential-badge">IBM SkillsBuild · 2025</span>
-                    </div>
-                    <h3>Data Classification and Summarization Using IBM Granite</h3>
-                    <h4>Specialized Training Certification</h4>
-                    <p>Completed specialized training in data classification and summarization methodologies using IBM Granite models, strengthening skills in structured information processing and reporting.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-solid fa-brain"></i> IBM Granite</span>
-                        <span class="pill"><i class="fa-solid fa-filter"></i> Data Processing</span>
-                        <span class="pill"><i class="fa-solid fa-file-lines"></i> Summarization</span>
-                    </div>
-                </div>
-
-                <!-- Publication: QRIS -->
-                <div class="credential-card">
-                    <div class="card-top">
-                        <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
-                        <span class="credential-badge">Jurnal Pendidikan Tambusai · 2024</span>
-                    </div>
-                    <h3>Penggunaan Sistem Pembayaran Digital Berbasis QRIS terhadap Pelaku UMKM</h3>
-                    <h4>Academic Research Publication</h4>
-                    <p>Co-authored qualitative field research evaluating QRIS digital payment adoption and infrastructure challenges among MSME actors in Lebakgede, Bandung.</p>
-                    <div class="tech-pills">
-                        <span class="pill"><i class="fa-solid fa-qrcode"></i> QRIS Fintech</span>
-                        <span class="pill"><i class="fa-solid fa-shop"></i> MSME Research</span>
-                        <span class="pill"><i class="fa-solid fa-chart-line"></i> Field Research</span>
-                    </div>
-                </div>
-            </div>
-
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>Technical <span>Skills</span></h2>
+          <p>
+            Core development stack, digital tools, and validated credentials.
+          </p>
         </div>
+
+        <div class="bento-grid">
+          <!-- Backend -->
+          <div class="bento-card bento-span-2">
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Programming &amp; Architecture</h3>
+            <p>
+              Building scalable backend systems, server-side business logic, and
+              APIs.
+            </p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-brands fa-laravel"></i> Laravel</span
+              >
+              <span class="pill"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="pill"
+                ><i class="fa-brands fa-js"></i> JavaScript</span
+              >
+              <span class="pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="pill"
+                ><i class="fa-brands fa-css3-alt"></i> CSS3</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-wind"></i> Tailwind CSS</span
+              >
+              <span class="pill"
+                ><i class="fa-brands fa-bootstrap"></i> Bootstrap</span
+              >
+            </div>
+          </div>
+
+          <!-- Database & Integration -->
+          <div class="bento-card">
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Database &amp; APIs</h3>
+            <p>Relational databases and RESTful service integration.</p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-solid fa-database"></i> MySQL</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-cloud"></i> REST API</span
+              >
+              <span class="pill"><i class="fa-solid fa-code"></i> JSON</span>
+            </div>
+          </div>
+
+          <!-- Digital Tools -->
+          <div class="bento-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h3>Tools &amp; Automation</h3>
+            <p>Cloud productivity and developer workflows.</p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-brands fa-google"></i> Google Apps Script</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-table"></i> Google Sheets</span
+              >
+              <span class="pill"
+                ><i class="fa-brands fa-github"></i> Git / GitHub</span
+              >
+            </div>
+          </div>
+
+          <!-- Professional Soft Skills -->
+          <div class="bento-card bento-span-2">
+            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Professional Mindset</h3>
+            <p>
+              Attributes honed through technical development and fast-paced
+              operational teamwork.
+            </p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-solid fa-lightbulb"></i> Problem Solving</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical
+                Thinking</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-people-group"></i> Team
+                Collaboration</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-arrows-spin"></i> Fast Learner &amp;
+                Adaptability</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Credentials Subsection (Certification & Publication) -->
+        <div class="credentials-header">
+          <h3>Certifications &amp; Research</h3>
+          <p>Academic publication and specialized AI/data training.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- Certification: IBM Granite -->
+          <div class="credential-card">
+            <div class="card-top">
+              <div class="card-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <span class="credential-badge">IBM SkillsBuild · 2025</span>
+            </div>
+            <h3>Data Classification and Summarization Using IBM Granite</h3>
+            <h4>Specialized Training Certification</h4>
+            <p>
+              Completed specialized training in data classification and
+              summarization methodologies using IBM Granite models,
+              strengthening skills in structured information processing and
+              reporting.
+            </p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-solid fa-brain"></i> IBM Granite</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-filter"></i> Data Processing</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-file-lines"></i> Summarization</span
+              >
+            </div>
+          </div>
+
+          <!-- Publication: QRIS -->
+          <div class="credential-card">
+            <div class="card-top">
+              <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+              <span class="credential-badge"
+                >Jurnal Pendidikan Tambusai · 2024</span
+              >
+            </div>
+            <h3>
+              Penggunaan Sistem Pembayaran Digital Berbasis QRIS terhadap Pelaku
+              UMKM
+            </h3>
+            <h4>Academic Research Publication</h4>
+            <p>
+              Co-authored qualitative field research evaluating QRIS digital
+              payment adoption and infrastructure challenges among MSME actors
+              in Lebakgede, Bandung.
+            </p>
+            <div class="tech-pills">
+              <span class="pill"
+                ><i class="fa-solid fa-qrcode"></i> QRIS Fintech</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-shop"></i> MSME Research</span
+              >
+              <span class="pill"
+                ><i class="fa-solid fa-chart-line"></i> Field Research</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
-        <div class="container reveal">
+      <div class="container reveal">
+        <!-- Initial View -->
+        <div id="contact-initial" class="contact-hero">
+          <h2 class="massive-title">
+            GET IN <br /><span class="italic-serif">TOUCH</span>
+          </h2>
+          <p class="contact-desc">
+            Have a project in mind, an opportunity, want to collaborate, or just
+            want to say hello? I'd love to hear from you. Let's build something
+            impactful together.
+          </p>
 
-            <!-- Initial View -->
-            <div id="contact-initial" class="contact-hero">
-                <h2 class="massive-title">GET IN <br><span class="italic-serif">TOUCH</span></h2>
-                <p class="contact-desc">Have a project in mind, an opportunity, want to collaborate, or just want to say hello? I'd love to hear from you. Let's build something impactful together.</p>
-
-                <div class="contact-actions">
-                    <button id="btn-collaborate" class="btn btn-primary btn-large">Let's Collaborate &rarr;</button>
-                    <div class="social-circles">
-                        <a href="https://github.com/farisazhar18" target="_blank" title="GitHub"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mfarisazhr" target="_blank" title="LinkedIn"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=6282111769397" target="_blank" title="WhatsApp"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <a href="mailto:farisazhar838@gmail.com" title="Email"><i
-                                class="fa-solid fa-envelope"></i></a>
-                    </div>
-                </div>
+          <div class="contact-actions">
+            <button id="btn-collaborate" class="btn btn-primary btn-large">
+              Let's Collaborate &rarr;
+            </button>
+            <div class="social-circles">
+              <a
+                href="https://github.com/farisazhar18"
+                target="_blank"
+                title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mfarisazhr"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=6282111769397"
+                target="_blank"
+                title="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="mailto:farisazhar838@gmail.com" title="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
-
-            <!-- Form View -->
-            <div id="contact-form-section" class="contact-split" style="display: none;">
-                <div class="contact-left">
-                    <h2 class="form-title">Let's build<br>something great<br>together <span class="sparkle">✨</span>
-                    </h2>
-                    <p class="form-desc">Have a question or looking to collaborate? Fill out the form or reach out through direct contact channels below.</p>
-
-                    <div class="contact-info-cards">
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:farisazhar838@gmail.com">farisazhar838@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                            <div>
-                                <h4>WhatsApp / Phone</h4>
-                                <p><a href="https://api.whatsapp.com/send?phone=6282111769397" target="_blank">+62 821-1176-9397</a></p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://www.linkedin.com/in/mfarisazhr" target="_blank">linkedin.com/in/mfarisazhr</a></p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Bandung, West Java, Indonesia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="btn-back-contact" class="btn btn-secondary" style="margin-top: 30px;">&larr; Back</button>
-                </div>
-
-                <div class="contact-right">
-                    <form class="glass-form" action="https://formspree.io/f/ganti_kode_formspree_disini" method="POST">
-                        <div class="form-row">
-                            <input type="text" name="name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your email" required>
-                        </div>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" placeholder="Tell me about your project or inquiry..." rows="5"
-                            required></textarea>
-                        <button type="submit" class="btn btn-primary btn-large w-100">Send Message &rarr;</button>
-                    </form>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <!-- Form View -->
+        <div
+          id="contact-form-section"
+          class="contact-split"
+          style="display: none"
+        >
+          <div class="contact-left">
+            <h2 class="form-title">
+              Let's build<br />something great<br />together
+              <span class="sparkle">✨</span>
+            </h2>
+            <p class="form-desc">
+              Have a question or looking to collaborate? Fill out the form or
+              reach out through direct contact channels below.
+            </p>
+
+            <div class="contact-info-cards">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:farisazhar838@gmail.com"
+                      >farisazhar838@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <h4>WhatsApp / Phone</h4>
+                  <p>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=6282111769397"
+                      target="_blank"
+                      >+62 821-1176-9397</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/mfarisazhr"
+                      target="_blank"
+                      >linkedin.com/in/mfarisazhr</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Bandung, West Java, Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <button
+              id="btn-back-contact"
+              class="btn btn-secondary"
+              style="margin-top: 30px"
+            >
+              &larr; Back
+            </button>
+          </div>
+
+          <div class="contact-right">
+            <form
+              class="glass-form"
+              action="https://formspree.io/f/ganti_kode_formspree_disini"
+              method="POST"
+            >
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Tell me about your project or inquiry..."
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary btn-large w-100">
+                Send Message &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Back to Top Button -->
     <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </a>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Muhammad Faris Azhar. Engineered with passion.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Muhammad Faris Azhar. Engineered with passion.</p>
+      </div>
     </footer>
 
-    <script src="js/script.js?v=5"></script>
-</body>
-
+    <script src="js/script.js?v=6"></script>
+  </body>
 </html>
